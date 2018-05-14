@@ -33,4 +33,21 @@ public class Menu {
         return opcion;
     }
     
+    public static int menuTipoCuenta(){
+        Scanner sc = new Scanner(System.in);
+        int opcion=0;
+        
+        while (opcion<1 || opcion>4) {            
+        System.out.println("-------------------------------------------");
+        System.out.println("1.- Cuenta de Ahorro.");
+        System.out.println("2.- Cuenta Corriente Personal.");
+        System.out.println("3.- Cuenta Corriente Empresa.");
+        System.out.println("4.- Salir.");
+        System.out.println("-------------------------------------------");
+        System.out.println("Elige el tipo de cuenta.");
+        opcion = sc.nextInt();
+        }
+        return opcion;
+    }
+    
 }
