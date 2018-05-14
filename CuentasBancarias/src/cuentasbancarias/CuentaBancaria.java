@@ -9,8 +9,8 @@ package cuentasbancarias;
  *
  * @author Alex Recacha
  */
-public abstract class CuentaBancaria {
-    
+public abstract class CuentaBancaria implements Imprimible {
+
     protected Persona titular;
     protected double saldo;
     protected String numCuenta;
@@ -19,6 +19,11 @@ public abstract class CuentaBancaria {
         this.titular = titular;
         this.saldo = saldo;
         this.numCuenta = numCuenta;
+    }
+
+    @Override
+    public void imprimirCB() {
+        System.out.println(titular.getNombre()+ " " + titular.getApellidos() + " - " + numCuenta);
     }
 
     /**
@@ -62,6 +67,5 @@ public abstract class CuentaBancaria {
     public void setNumCuenta(String numCuenta) {
         this.numCuenta = numCuenta;
     }
-    
-    
+
 }

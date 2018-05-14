@@ -9,7 +9,7 @@ package cuentasbancarias;
  *
  * @author alumno
  */
-public class Persona {
+public class Persona implements Imprimible{
     
     private String nombre;
     private String apellidos;
@@ -21,6 +21,12 @@ public class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    @Override
+    public void imprimirDatos() {
+        System.out.println(nombre + " " + apellidos);
+    }
+
+    
     /**
      * @return the nombre
      */
@@ -61,6 +67,11 @@ public class Persona {
      */
     public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
+    }
+
+    @Override
+    public void imprimirCB() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

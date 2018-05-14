@@ -22,6 +22,7 @@ public class CuentaCorrienteEmpresa extends CuentaCorriente{
         this.maxDescubierto = maxDescubierto;
     }
 
+    
     /**
      * @return the interesDescubierto
      */
@@ -48,6 +49,11 @@ public class CuentaCorrienteEmpresa extends CuentaCorriente{
      */
     public void setMaxDescubierto(double maxDescubierto) {
         this.maxDescubierto = maxDescubierto;
+    }
+
+    @Override
+    public void imprimirDatos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

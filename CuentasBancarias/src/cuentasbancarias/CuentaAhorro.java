@@ -31,6 +31,11 @@ public class CuentaAhorro extends CuentaBancaria{
     public void setTipoInteres(double tipoInteres) {
         this.tipoInteres = tipoInteres;
     }
+
+    @Override
+    public void imprimirDatos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

@@ -33,6 +33,11 @@ public class CuentaCorrientePersonal extends CuentaCorriente{
     public void setComisionMantenimiento(double comisionMantenimiento) {
         this.comisionMantenimiento = comisionMantenimiento;
     }
+
+    @Override
+    public void imprimirDatos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     
